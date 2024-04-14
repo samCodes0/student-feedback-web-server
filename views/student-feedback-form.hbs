@@ -1,0 +1,67 @@
+<div class="header bg-primary-subtle mb-4 p-4 rounded-3 text-center">
+    <h1>Please provide feedback. You may do so anonymously</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Instructions</h2>
+        <p>
+            As one of our students, your thoughts, feedback and comments are
+            important to us.
+        </p>
+        <p>Please send them using this form.</p>
+        <p>
+            If you would like us to follow up with you, please include your
+            contact information.
+        </p>
+    </div>
+    <!-- End of first instructions col div -->
+
+    <!--  -->
+    <div class="col-md-6">
+        <form action="/submit-feedback" method="POST">
+            <label class="form-label" for="name">Name: </label
+            ><input class="form-control" id="name" name="name" type="text"/>
+            <br/>
+            <label class="form-label" for="email">Email: </label
+            ><input class="form-control" id="email" name="email" type="email"/>
+            <br/>
+            <label class="form-label" for="comments">Comments: </label>
+            <br/>
+            <textarea
+                    class="form-control"
+                    id="comments"
+                    name="comments"
+                    required
+            ></textarea>
+
+            <p class="mx-2">Are you a current student?</p>
+
+            <div class="form-check">
+                <label class="form-check-label" for="yes-button">Yes</label
+                ><input
+                    class="form-check-input"
+                    id="yes-button"
+                    value="yes"
+                    name="current-student"
+                    type="radio"
+                    checked="true"
+            />
+            </div>
+
+            <div class="form-check">
+                <label class="form-check-label" for="no-button">No</label>
+                <input
+                        class="form-check-input"
+                        id="no-button"
+                        value="no"
+                        name="current-student"
+                        type="radio"
+                />
+            </div>
+            <br/>
+            <input class="btn btn-primary" type="submit"/>
+        </form>
+    </div>
+    <!-- End of second form col div -->
+</div>
